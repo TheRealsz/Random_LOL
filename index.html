@@ -16,24 +16,77 @@
     </head>
     <body>
         <div class="container">
-            <h1 id = "nameChamp"></h1>
-            <span id= "firstTag"></span>
-            <span id= "secondTag"></span>
-            <p id= "champStory"></p>
-            <img id="champQ" />
-            <p id= "champQTitle"></p>
-            <img id="champW" />
-            <p id= "champWTitle"></p>
-            <img id="champE" />
-            <p id= "champETitle"></p>
-            <img id="champR" />
-            <p id= "champRTitle"></p>
-            
-            <img id="backgroundChampion" />
-            <img id="iconChampion" />
-            <div class= "button-test d-flex justify-content-center"> 
-                <button type="button" class="clean-submit btn btn-outline-dark" style= "width: 300px;" onclick= "getChampionList()">Proximo</button> 
-            </div>
+            <div class="blockquote"></div>
+            <main class="main">
+                <div class= "test">
+                    <div class="row">
+                        <div class = "col-sm-12">
+                            <div class = "backgroundImg d-block">
+                                <div class = "background-dark py-50 text-center">
+                                    <div class = "mb-0 text-white">
+                                        <div class="text-fonts">
+                                            <img id="iconChampion" />
+                                            <h1 id = "nameChamp"></h1>
+                                            <span id= "firstTag"></span>
+                                            <span id= "secondTag"></span>
+                                            <div class = "row py-20">
+                                                <div class = "col-sm-6 text-center border-r">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <p class="pHab">Habilidades</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="text-center col-sm-3">
+                                                            <div class="iconHab">
+                                                                <img id="champQ" />
+                                                            </div>    
+                                                            <p id= "champQTitle"></p>
+                                                        </div>    
+                                                        <div class="text-center col-sm-3">
+                                                            <div class="iconHab">
+                                                                <img id="champW" />
+                                                            </div>    
+                                                            <p id= "champWTitle"></p>
+                                                        </div>
+                                                        <div class="text-center col-sm-3">
+                                                            <div class="iconHab">
+                                                                <img id="champE" />
+                                                            </div>    
+                                                            <p id= "champETitle"></p>
+                                                        </div>
+                                                        <div class="text-center col-sm-3">    
+                                                            <div class="iconHab">
+                                                                <img id="champR" />
+                                                            </div>    
+                                                            <p id= "champRTitle"></p>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                                <div class= "col-sm-6">   
+                                                    <p id= "champStory"></p>
+                                                </div>
+                                                <div class="row">  
+                                                    <div class= "div-buttons"> 
+                                                        <div class="row py-20"> 
+                                                            <div class= "button-right col-sm-6"> 
+                                                                <button type="button" class="button btn btn-outline-primary" style= "width: 250px;" onclick= "getChampionList()">Proximo</button> 
+                                                            </div>
+                                                            <div class= "button-left col-sm-6"> 
+                                                                <button type="button" class="button btn btn-outline-success" style= "width: 250px;" onclick= "infoChamp()">+ Info</button> 
+                                                            </div>
+                                                        </div>  
+                                                    </div>      
+                                                </div>    
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>       
+                </div>
+            </main>    
         </div>  
     </body>
     <script src="./node_modules/axios/dist/axios.min.js"></script>

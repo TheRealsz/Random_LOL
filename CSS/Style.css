@@ -1,8 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+img{
+    vertical-align: middle;
+    border-style: none;
+    text-align: center !important;
+}
+
+div{
+    display: block;
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body{
+    background-color: #222831
+}
 #backgroundChampion {
     display: flex;
 }
 
-#iconChampion {
+
+
+h1, p, span {
+    font-family: "Poppins";
+    color:ivory !important
+}
+
+.container{
     display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 9;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+.background-dark{
+   background-color: rgba(0,0,0,.6) !important;
+   box-sizing: border-box;
+   text-align: center!important
+}
+
+.py-50 {
+    padding-top: 50px !important ;
+    padding-bottom: 50px !important;
+}
+
+.backgroundImg{
+    background-size: cover;
+    padding: 20px 20px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100% ;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    
+}
+
+#backgroundChampion{
+    background-size: cover;
+    padding: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 0 auto;
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.border-r{
+    border-right: 1px solid #e4e7ed!important;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-sm-3{
+    position: relative;
+    max-width: 25%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;   
+}
+
+
+.col-sm-6{
+    position: relative;
+    max-width: 50%;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;   
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.iconHab{
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    height: 60px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.button-div{
+    text-align: center  ;
+}
+
+.button {
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+.test {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 24px;
+}
+
+.col-sm-12{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+#firstTag{
+    margin-bottom: 25px;
+    color: rgb(143, 143, 143) !important;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-right: 23px;
+}
+
+
+#secondTag{
+    margin-bottom: 25px;
+    color:rgb(143, 143, 143) !important;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-left: 23px;
+
+}
+
+.pHab{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#champStory{
+    margin-bottom: 20px;
+}
+
+.button-right {
+    text-align: right !important;
+    flex: 0 0 50%;
+}
+
+.button-left {
+    text-align: left !important;
+    flex: 0 0 50%;
+}
+
+.div-buttons{
+    padding-bottom: 20px;
+    padding: 20px 20px 1px;
+    width: 100%;
 }
 

@@ -10,6 +10,8 @@ let urlIconChampionReturn;
 let retorno;
 let teste;
 let championsTest;
+let champNameFormat;
+let urlCompletChampInfo;
 
 // Window.onload = function (){
 //     getChampionList()
@@ -44,10 +46,13 @@ async function randomChampion(championsTest) {
     if (champTags[1]) {
         const secondChampTag = champTags[1]
         document.getElementById("secondTag").innerHTML = secondChampTag
+        document.getElementById("secondTag").style.display = "inline"
     }
 
     if (champTags[1] == "" || champTags[1] == undefined){
         document.getElementById("secondTag").innerHTML = ""
+        document.getElementById("secondTag").style.display = "none"
+        document.getElementById("firstTag").style.paddingRight = "0px"
     }
 
     const champStory = champData[champReturnData].lore
@@ -80,13 +85,27 @@ async function randomChampion(championsTest) {
     document.getElementById('champRTitle').innerHTML = champRTitle
 
     urlBackgroundChamp = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg`
-    document.getElementById('backgroundChampion').src = urlBackgroundChamp
+    document.getElementsByClassName('backgroundImg')[0].style.backgroundImage = `url(${urlBackgroundChamp})`; 
 
     urlIconChampion = `https://ddragon.leagueoflegends.com/cdn/11.18.1/img/champion/${championName}.png`
     document.getElementById('iconChampion').src = urlIconChampion
 
+    champNameFormat = champNameSpecific.toLowerCase();
+    
 }
 getChampionList()
+
+function infoChamp() {
+    if(champNameFormat == "nunu e willump") {
+        urlCompletChampInfo = "https://www.leagueoflegends.com/pt-br/champions/nunu/"
+        window.open(urlCompletChampInfo)
+    } else{
+        let champFormatNameURL = champNameFormat.replace(". ", "-").replace("'", "-").replace(" ", "-")
+        urlCompletChampInfo = `https://www.leagueoflegends.com/pt-br/champions/${champFormatNameURL}/`
+        window.open(urlCompletChampInfo)
+    }    
+
+}
 
 function generateRandomNumber(mn, mx) { 
     return Math.random() * (mx - mn) + mn; 
