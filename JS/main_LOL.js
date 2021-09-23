@@ -1,3 +1,10 @@
+require('.env').config();
+process.env.APP_URL
+
+const express = require("express")
+const app = express()
+
+app.listen(process.env.APP_URL || 3000)
 
 // let url = `http://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion/${championName}.json`;
 let urlListChamp;

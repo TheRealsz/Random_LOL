@@ -6,6 +6,7 @@
   "type": "module",
   "dependencies": {
     "axios": "^0.21.4",
+    "express": "^4.17.1",
     "http-server": "^13.0.2"
   },
   "devDependencies": {
@@ -17,7 +18,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC", 
+  "license": "ISC",
   "engines": {
     "node": "14.x"
   }
