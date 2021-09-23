@@ -14,9 +14,6 @@ let championsTest;
 let champNameFormat;
 let urlCompletChampInfo;
 
-// Window.onload = function (){
-//     getChampionList()
-// }
 
 async function getChampionList(){
     urlListChamp = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion.json"
