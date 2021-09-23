@@ -1,3 +1,4 @@
+import axios from "axios"
 
 // let url = `http://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion/${championName}.json`;
 let urlListChamp;
