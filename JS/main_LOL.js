@@ -17,7 +17,8 @@ let urlCompletChampInfo;
 
 async function getChampionList(){
     urlListChamp = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion.json"
-    retorno = await axios.get(urlListChamp)
+    retorno = fetch(urlListChamp).then(res => res.json())
+    // retorno = await axios.get(urlListChamp)
     teste = retorno.data
     championsTest = Object.keys(teste.data) 
     randomChampion(championsTest)
@@ -29,7 +30,8 @@ async function randomChampion(championsTest) {
     const championName = championsTest[random]
 
     urlChampion = `https://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion/${championName}.json`
-    urlChampionReturn = await axios.get(urlChampion)
+    // urlChampionReturn = await axios.get(urlChampion)
+    urlIconChampionReturn = fetch(urlChampion).then(res => res.json())
     const champData = urlChampionReturn.data.data
     const champReturnData = Object.keys(champData)[0]
 
