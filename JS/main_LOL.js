@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express()
 
-app.listen(process.env.APP_URL || 8080)
+app.listen(process.env.PORT || 8080)
 
 // let url = `http://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion/${championName}.json`;
 let urlListChamp;
