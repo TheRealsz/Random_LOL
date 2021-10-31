@@ -80,6 +80,8 @@ h1, p, span {
     display: flex;
     margin-right: -15px;
     margin-left: -15px;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .py-20 {
@@ -101,6 +103,7 @@ h1, p, span {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;   
+    min-width: 100px;
 }
 
 
