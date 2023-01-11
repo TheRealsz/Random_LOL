@@ -1,11 +1,26 @@
-Status: Em construção
+<h1 align="center">
+  <p>Random LOL</p>
+</h1>
+
+> Projeto feito para estudos de uso de API e do Axios
+
+# Índice 
+
+* [Introdução](##Introdução)
+* [Tecnologias](##Tecnologias)
+* [Funcionalidades](##Funcionalidades)
+* [Utilização do projeto](##tilização-do-projeto)
+* [Contato](##Contato)
+* [Status do Projeto](##Status-do-projeto)
+* [Autores](##Autores)
 
 
-# Random LOL
+## Introdução
+O Random LOL é um projeto que lhe mostra um personagem do jogo League of Legends de forma aleatoria, lhe mostrando seu nome, icone, habilidades, historia e caracteristicas do personagem.
 
-## Descrição do projeto
+- **É um projeto feito para estudos**
 
-Projeto que randomiza os personagens do jogo League of Legends, mostrando imagens do campeão, habilidades, nome, titulo, tags e sua historia.
+> O Random LOL foi desenvolvido para aplicar conhecimento por volta do uso de API com o Axios. Busquei compreender como adicionar uma informacao em formato JSON, que vem de uma API, dentro de um projeto proprio.
 
 ## Tecnologias
 
@@ -14,25 +29,25 @@ Projeto que randomiza os personagens do jogo League of Legends, mostrando imagen
 * Bootstrap
 * Javascript
 * Axios
-* API Riot Games
+* API Riot games
 
-## Experiencia
+## Funcionalidades
+O projeto tem a finalidade de lhe mostrar um personagem aleatorio do jogo League of Legends com suas caracteristicas. Ao entrar no site, já lhe é apresentado de cara um personagem de forma aleatoria.
+O projeto possui dois botões, que são:
 
-Neste projeto, estou aprendendo como usar uma API e como consumi-la tendo a ajuda do axios, procurando informações dentro de .json e jogando para o HTML. Comecei também a ter ideias de como usar dependencias e de como instala-las
+- `Proximo` - Botão do qual ao apertar, atualiza a pagina e lhe mostra um outro personagem de forma totalmente aleatoria, trazendo caracteristicas dele.
+- `+Info` - Botão que te leva ao site da Riot (proprietaria do jogo), na pagina especifica do personagem, mostrando todas as informacoes do mesmo.
 
-## Conteudo
+## Utilização do projeto
+Para utilizar o projeto, é preciso unicamente acessar o link a seguir:
 
-### Site
- 
-* Random LOL
+- [Random LOL](https://randomleagueoflegends.herokuapp.com/)
 
-### Pastas
+## Contato
+Temos algumas formas de contato, elas podem ser encontradas [aqui](https://github.com/TheRealRobinho)
 
-* Bootstrap
-* CSS
-* JS
-* node_modules
+## Status do projeto
+:white_check_mark: Finalizado :white_check_mark:
 
-## Autor
-
-Robson Diego Andrade de Oliveira
+## Autores
+[<img src="https://avatars.githubusercontent.com/u/77800184?v=4" width=185><br><sub>Robson Diego Andrade de Oliveira</sub>](https://github.com/TheRealRobinho)
