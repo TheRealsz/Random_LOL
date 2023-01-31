@@ -16,7 +16,7 @@ let urlCompletChampInfo;
 
 
 async function getChampionList(){
-    urlListChamp = "https://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion.json"
+    urlListChamp = "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/pt_BR/champion.json"
     retorno = await axios.get(urlListChamp)
     teste = retorno.data
     championsTest = Object.keys(teste.data) 
@@ -28,7 +28,7 @@ async function randomChampion(championsTest) {
     const random = Math.floor(generateRandomNumber(0, championsTest.length));
     const championName = championsTest[random]
 
-    urlChampion = `https://ddragon.leagueoflegends.com/cdn/11.18.1/data/pt_BR/champion/${championName}.json`
+    urlChampion = `https://ddragon.leagueoflegends.com/cdn/13.1.1/data/pt_BR/champion/${championName}.json`
     urlChampionReturn = await axios.get(urlChampion)
     const champData = urlChampionReturn.data.data
     const champReturnData = Object.keys(champData)[0]
@@ -59,25 +59,25 @@ async function randomChampion(championsTest) {
     const champSpells = champData[champReturnData].spells
 
     const champImgQ = champSpells[0].id
-    const champImgQReturn = `https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champImgQ}.png`
+    const champImgQReturn = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${champImgQ}.png`
     document.getElementById('champQ').src = champImgQReturn
     const champQTitle = champSpells[0].name
     document.getElementById('champQTitle').innerHTML = champQTitle
 
     const champImgW = champSpells[1].id
-    const champImgWReturn = `https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champImgW}.png`
+    const champImgWReturn = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${champImgW}.png`
     document.getElementById('champW').src = champImgWReturn
     const champWTitle = champSpells[1].name
     document.getElementById('champWTitle').innerHTML = champWTitle
 
     const champImgE = champSpells[2].id
-    const champImgEReturn = `https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champImgE}.png`
+    const champImgEReturn = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${champImgE}.png`
     document.getElementById('champE').src = champImgEReturn
     const champETitle = champSpells[2].name
     document.getElementById('champETitle').innerHTML = champETitle
 
     const champImgR = champSpells[3].id
-    const champImgRReturn = `https://ddragon.leagueoflegends.com/cdn/11.18.1/img/spell/${champImgR}.png`
+    const champImgRReturn = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/spell/${champImgR}.png`
     document.getElementById('champR').src = champImgRReturn
     const champRTitle = champSpells[3].name
     document.getElementById('champRTitle').innerHTML = champRTitle
@@ -85,7 +85,7 @@ async function randomChampion(championsTest) {
     urlBackgroundChamp = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championName}_0.jpg`
     document.getElementsByClassName('backgroundImg')[0].style.backgroundImage = `url(${urlBackgroundChamp})`; 
 
-    urlIconChampion = `https://ddragon.leagueoflegends.com/cdn/11.18.1/img/champion/${championName}.png`
+    urlIconChampion = `https://ddragon.leagueoflegends.com/cdn/13.1.1/img/champion/${championName}.png`
     document.getElementById('iconChampion').src = urlIconChampion
 
     champNameFormat = champNameSpecific.toLowerCase();
